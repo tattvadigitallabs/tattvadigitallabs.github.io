@@ -6,7 +6,7 @@ Live at https://tattvadigitallabs.github.io (GitHub Pages, `main` branch).
 |---|---|
 | Company home (all apps) | `/` |
 | Tattva Image Compressor | `/image-compressor/` |
-| Privacy (company + one section per app) | `/privacy/` (`#image-compressor` for the app) |
+| Privacy (company + one section per app) | `/privacy/` (`#image-compressor`, `#finance-calculator`) |
 | Support (app chooser + FAQ per app) | `/support/` |
 
 ## Editing
@@ -20,5 +20,5 @@ To add a new app: add its icon to `assets/brand/`, a card in the home "Our apps"
 
 ## Brand
 - Company mark: `assets/brand/tattva-mark.svg` (the "T." monogram). Use this for Tattva Digital Labs only.
-- App icons are separate per product, e.g. `assets/brand/image-compressor-icon.svg`.
+- App icons are separate per product: `assets/brand/image-compressor-icon.svg`, `assets/brand/finance-calculator-icon.svg`.
 - Font: Manrope by Mikhail Sharanda, SIL Open Font License 1.1 (self-hosted, no third-party requests).

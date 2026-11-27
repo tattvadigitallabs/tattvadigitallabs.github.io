@@ -3,6 +3,7 @@ root = sys.argv[1]
 EMAIL = 'support.tattvadigitallabs@gmail.com'
 MARK = '<img class="mark-img" src="/assets/brand/tattva-mark.svg" alt="" width="34" height="34">'
 APP_ICON = '/assets/brand/image-compressor-icon.svg'
+FINANCE_ICON = '/assets/brand/finance-calculator-icon.svg'
 CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>'
 PLAY = '<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0f6e6a" d="M4.2 2.6c-.13.15-.2.37-.2.65v17.5c0 .28.07.5.2.65l.04.04L14 11.7v-.2L4.24 2.56z"/><path fill="#14b8a6" d="M17.3 15l-3.3-3.3v-.2l3.3-3.3.07.04 3.9 2.22c1.12.63 1.12 1.67 0 2.3l-3.9 2.22z"/><path fill="#0b5a57" d="M17.37 14.96L14 11.6 4.2 21.4c.36.38.96.43 1.64.04l11.53-6.48"/><path fill="#2dd4bf" d="M17.37 8.24L5.84 1.76C5.16 1.37 4.56 1.42 4.2 1.8L14 11.6z"/></svg>'
 ICONS = {
@@ -225,12 +226,12 @@ def page(title, desc, current, kicker, h1, lede, body):
 <main class="wrap content">{body}</main>
 ''' + FOOT
 
-def product_head(anchor, name, sub):
-    return f'<div class="product-head" id="{anchor}"><img src="{APP_ICON}" alt="" width="48" height="48"><div><h2>{name}</h2><span>{sub}</span></div></div>'
+def product_head(anchor, name, sub, icon=APP_ICON):
+    return f'<div class="product-head" id="{anchor}"><img src="{icon}" alt="" width="48" height="48"><div><h2>{name}</h2><span>{sub}</span></div></div>'
 
 privacy_body = f'''<div class="grid">
 <aside class="toc"><b>On this page</b>
-<a href="#principles">Our principles</a><a href="#website">This website</a><a href="#image-compressor">Tattva Image Compressor</a><a href="#children">Children</a><a href="#changes">Changes</a><a href="#contact">Contact</a></aside>
+<a href="#principles">Our principles</a><a href="#website">This website</a><a href="#image-compressor">Tattva Image Compressor</a><a href="#finance-calculator">Tattva Finance Calculator</a><a href="#children">Children</a><a href="#changes">Changes</a><a href="#contact">Contact</a></aside>
 <article class="prose">
 <div class="summary"><h2>The short version</h2>
 <p>Tattva Digital Labs builds apps that work without collecting your personal data. Each app below explains exactly what it accesses and what stays on your device.</p>
@@ -262,6 +263,24 @@ privacy_body = f'''<div class="grid">
 <h3>Permissions</h3>
 <ul><li><strong>Notifications</strong> (Android 13+, optional): show progress while compressing several images.</li>
 <li><strong>Storage</strong> (Android 8–9 only): save compressed images to your gallery. Newer Android versions don't need it.</li></ul>
+
+{product_head("finance-calculator", "Tattva Finance Calculator", "Android app · Updated 27 November 2026", FINANCE_ICON)}
+<p><strong>Summary:</strong> this app does not collect, store, send or share any personal data. Every calculation happens on your phone, and the app has no internet permission at all. We never see the numbers you enter.</p>
+<h3>What the app accesses</h3>
+<p>Only what you type into a calculator, such as a loan amount, salary or interest rate. The app requests no permissions: no contacts, photos, location, SMS or files.</p>
+<h3>What stays on your device</h3>
+<ul><li><strong>Settings</strong> such as theme.</li>
+<li><strong>Last values in each calculator</strong>, so leaving a screen doesn't lose your work.</li>
+<li><strong>Saved calculations</strong>: the name you give them and their inputs. Delete them any time in the app (Saved → Delete), or remove everything by clearing the app's data or uninstalling it.</li></ul>
+<p>None of this leaves your device. App data is excluded from cloud backup and device-to-device transfer.</p>
+<h3>Sharing a summary</h3>
+<p>When you tap Share, the app creates a summary image or text in its private storage and hands it only to the app you choose (for example WhatsApp or email). What happens after that is governed by the app you chose.</p>
+<h3>Network access</h3>
+<p>The app does not request internet permission, so it cannot send data anywhere. This is checked automatically every time the app is built. It contains no ads, analytics, crash reporting or other third-party SDKs that collect data.</p>
+<h3>Calculations are not advice</h3>
+<p>Results are estimates for understanding only and are not financial or tax advice. Each result's Calculation Passport explains the method and assumptions used.</p>
+<h3>If this changes</h3>
+<p>If we ever add anonymous usage statistics, we will update this section and the app's Google Play data safety information before that version is released. The numbers you enter would never be included.</p>
 
 <h2 id="children">Children</h2>
 <p>Our apps do not knowingly collect personal data from anyone, including children.</p>
