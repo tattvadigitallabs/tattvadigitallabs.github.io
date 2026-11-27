@@ -1,3 +1,24 @@
-Tattva Digital Labs website: privacy policy and support pages for our apps.
+# Tattva Digital Labs website
 
-Font: Manrope by Mikhail Sharanda, licensed under the SIL Open Font License 1.1.
+Live at https://tattvadigitallabs.github.io (GitHub Pages, `main` branch).
+
+| Page | Path |
+|---|---|
+| Company home (all apps) | `/` |
+| Tattva Image Compressor | `/image-compressor/` |
+| Privacy (company + one section per app) | `/privacy/` (`#image-compressor` for the app) |
+| Support (app chooser + FAQ per app) | `/support/` |
+
+## Editing
+Pages are generated from `scripts/build_site.py` (shared header, footer and sections):
+
+```bash
+python3 scripts/build_site.py .
+```
+
+To add a new app: add its icon to `assets/brand/`, a card in the home "Our apps" section, a product page, a section in the privacy page and a chooser card + FAQ block in support.
+
+## Brand
+- Company mark: `assets/brand/tattva-mark.svg` (the "T." monogram). Use this for Tattva Digital Labs only.
+- App icons are separate per product, e.g. `assets/brand/image-compressor-icon.svg`.
+- Font: Manrope by Mikhail Sharanda, SIL Open Font License 1.1 (self-hosted, no third-party requests).

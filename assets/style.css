@@ -125,3 +125,19 @@ p{margin:0}
   .nav nav a.hide-sm{display:none}
   .brand span.name{font-size:16px}
 }
+
+/* Company mark (image) in header/footer */
+.brand img.mark-img{width:34px;height:34px;border-radius:9px;display:block;box-shadow:0 6px 16px -6px rgba(45,212,191,.45)}
+/* Product section headers on hub pages */
+.product-head{display:flex;align-items:center;gap:14px;margin:48px 0 18px}
+.product-head img{width:48px;height:48px;border-radius:12px;box-shadow:var(--shadow)}
+.product-head h2{margin:0!important;font-size:26px}
+.product-head span{display:block;font-size:14px;color:var(--ink-soft);font-weight:600;letter-spacing:0}
+.chooser{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:0 0 36px}
+.chooser a{display:flex;align-items:center;gap:14px;padding:16px;border-radius:18px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);text-decoration:none;color:var(--ink);font-weight:700}
+.chooser a:hover{border-color:var(--brand)}
+.chooser img{width:44px;height:44px;border-radius:11px}
+.chooser small{display:block;color:var(--ink-soft);font-weight:600;font-size:13px}
+.chooser .soon{opacity:.6;border-style:dashed;box-shadow:none}
+.chooser .soon span.ph{width:44px;height:44px;border-radius:11px;border:2px dashed var(--line-strong);display:block}
+.prose h3{font-size:18px;margin:26px 0 8px;letter-spacing:-.01em}
