@@ -6,6 +6,7 @@ Live at https://tattvadigitallabs.github.io (GitHub Pages, `main` branch).
 |---|---|
 | Company home (all apps) | `/` |
 | Tattva Image Compressor | `/image-compressor/` |
+| Tattva Finance Calculator | `/finance-calculator/` |
 | Privacy (company + one section per app) | `/privacy/` (`#image-compressor`, `#finance-calculator`) |
 | Support (app chooser + FAQ per app) | `/support/` |
 

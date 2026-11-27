@@ -130,6 +130,7 @@
 .products .head h2{font-size:clamp(30px,3.8vw,46px);margin:12px 0 8px}
 .prod-card{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow-lg);padding:48px;overflow:hidden;position:relative}
 .prod-card::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(20,184,166,.16),transparent 65%);pointer-events:none}
+.prod-card+.prod-card{margin-top:28px}
 .prod-card .icon{width:72px;height:72px;border-radius:18px;box-shadow:var(--shadow)}
 .prod-card h3{font-size:clamp(26px,3vw,36px);margin:18px 0 10px}
 .prod-card p{color:var(--ink-soft);font-size:18px;max-width:480px}

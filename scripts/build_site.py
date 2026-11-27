@@ -82,6 +82,16 @@ home = head("Tattva Digital Labs: simple apps that respect your privacy",
       </div>
       <div class="shots">{device("target","Compress to a target size")}{device("target-results","Results under the limit")}</div>
     </article>
+    <article class="prod-card reveal">
+      <div>
+        <img class="icon" src="{FINANCE_ICON}" alt="Tattva Finance Calculator icon" width="72" height="72">
+        <h3>Tattva Finance Calculator</h3>
+        <p>EMI, SIP, income tax, FD, PPF, GST and more, with every result explained: the method, the assumptions, and what the number means for you. Entirely offline.</p>
+        <div class="tags"><span>Calculation Passport</span><span>What-if scenarios</span><span>13 calculators</span><span>Android</span></div>
+        <div class="actions"><a class="btn btn-dark" href="/finance-calculator/">Learn more →</a><span class="status">Coming soon on Google Play</span></div>
+      </div>
+      <div class="shots">{device("finance-emi","EMI result")}{device("finance-passport","Calculation Passport")}</div>
+    </article>
     <div class="next-card reveal"><b>More on the way</b>We're working on new tools built the same way: simple, private, offline.</div>
   </section>
 </div>
@@ -218,6 +228,116 @@ product = head("Tattva Image Compressor: compress photos to an exact size",
 </div></section>
 ''' + FOOT
 
+# ---------------- Product: Finance Calculator ----------------
+finance = head("Tattva Finance Calculator: every money calculation, clearly explained",
+               "EMI, SIP, income tax, FD, PPF, GST and more. Every result comes with its method, assumptions and meaning. Fully offline, no ads, no sign-up.",
+               HOME_CSS, 'apps', og='/assets/img/finance-og.png') + f'''
+<section class="band hero"><div class="wrap">
+  <div class="reveal">
+    <span class="app-eyebrow"><img src="{FINANCE_ICON}" alt="" width="28" height="28">Tattva Finance Calculator · Android</span>
+    <h1>Not just the number. <em>What it means.</em></h1>
+    <p class="lead">Most calculators give you an EMI and stop. Tattva shows how it was worked out, what was assumed, where your money goes, and what changes if you prepay, switch regime or pick another offer.</p>
+    <ul class="assure">
+      <li>{CHECK} Works 100% offline</li><li>{CHECK} No ads, no sign-up</li><li>{CHECK} Every result explained</li>
+    </ul>
+    <div class="cta">
+      <span class="btn btn-store">{PLAY}<span><small>Coming soon on</small><b>Google Play</b></span></span>
+      <a class="btn btn-ghost" href="#features">See how it works</a>
+    </div>
+  </div>
+  <div class="stage reveal" aria-hidden="true">
+    {device("finance-emi","","d1")}
+    {device("finance-whatif","","d2")}
+    <div class="float f1">₹18.55 lakh less<span>interest, by prepaying ₹1 lakh a year</span></div>
+    <div class="float f2"><b>✓</b> 6 years sooner<span>loan paid off in 14 years</span></div>
+  </div>
+</div></section>
+
+<div class="wrap">
+  <div class="proof reveal"><div class="grid">
+    <div class="cell"><b>13</b><span>everyday calculators</span></div>
+    <div class="cell"><b>Every</b><span>result explained</span></div>
+    <div class="cell"><b>₹50L</b><span>or just type 50L</span></div>
+    <div class="cell"><b>0 bytes</b><span>ever uploaded</span></div>
+  </div></div>
+
+  <section class="feature" id="features">
+    <div class="copy reveal">
+      <span class="kicker">Calculation Passport</span>
+      <h2>Know where every number comes from.</h2>
+      <p>Tap “Understand this” on any result to see your inputs, the method and formula with your numbers in it, how the total divides, every assumption, and why your bank's figure might differ.</p>
+      <ul class="ticks"><li>Breakdowns that always add up exactly</li><li>Year-by-year schedule and growth</li><li>Plain words, not jargon</li></ul>
+    </div>
+    <div class="pair reveal">{device("finance-passport","Calculation Passport: inputs and method")}{device("finance-meaning","Assumptions and what it means")}</div>
+  </section>
+
+  <section class="feature rev">
+    <div class="copy reveal">
+      <span class="kicker">What if?</span>
+      <h2>See the effect of a decision before you make it.</h2>
+      <p>Prepay a lakh a year, pay a little more each month, step up your SIP, or use your full 80C. One tap shows the difference in rupees and years, and your original stays untouched.</p>
+      <ul class="ticks"><li>Ready-made scenarios for every calculator</li><li>Changes spelled out: “₹18.55 lakh less interest”</li><li>Save the scenario you like</li></ul>
+    </div>
+    <div class="pair reveal">{device("finance-whatif","What-if comparison")}{device("finance-compare","Comparing two loan offers")}</div>
+  </section>
+
+  <section class="feature">
+    <div class="copy reveal">
+      <span class="kicker">Made for India</span>
+      <h2>Type money the way you say it.</h2>
+      <p>Enter 50L, 1.25&nbsp;Cr or 45k, or tap ×Lakh on the number pad. Amounts appear as ₹50,00,000 with lakh and crore in words, everywhere.</p>
+      <ul class="ticks"><li>Income tax for FY 2026-27, new vs old regime</li><li>PPF and Sukanya Samriddhi at current government rates</li><li>GST with CGST/SGST or IGST split</li></ul>
+    </div>
+    <div class="pair reveal">{device("finance-input","Typing 75 lakh with the Lakh button")}{device("finance-tax","New vs old tax regime")}</div>
+  </section>
+
+  <section class="how">
+    <span class="kicker reveal">Every calculator you need</span>
+    <h2 class="reveal">One calm app, thirteen tools.</h2>
+    <p class="muted reveal">Loans: EMI, loan eligibility, compare offers · Investments: SIP, lumpsum, goal planner · Deposits: FD, RD · Schemes: PPF, Sukanya Samriddhi · Tax: income tax, GST · Everyday: simple &amp; compound interest</p>
+    <div class="steps">
+      <div class="step reveal"><span class="n">STEP 01</span><h3>Pick a calculator</h3><p>Popular ones are on the home screen. Search understands “home loan”, “sukanya” or “80c”.</p></div>
+      <div class="step reveal"><span class="n">STEP 02</span><h3>Enter your numbers</h3><p>Results update as you type. Mistakes get a helpful hint, like “did you mean 8.5%?”.</p></div>
+      <div class="step reveal"><span class="n">STEP 03</span><h3>Understand, explore, share</h3><p>Open the Passport, try a What-if, save it, or share a clean summary card.</p></div>
+    </div>
+  </section>
+</div>
+
+<section class="band trust reveal"><div class="wrap">
+  <div>
+    <span class="kicker">Private by design</span>
+    <h2>Your numbers never leave your phone.</h2>
+    <p>Tattva Finance Calculator has no internet permission. It cannot upload your salary, loans or savings, and it has no ads or trackers. <a href="/privacy/#finance-calculator">Read its privacy details</a>.</p>
+  </div>
+  <div class="tiles">
+    <div class="tile"><b>No internet</b><span>Every calculation runs offline</span></div>
+    <div class="tile"><b>No accounts</b><span>Nothing to sign up for</span></div>
+    <div class="tile"><b>No ads or trackers</b><span>Zero data collected</span></div>
+    <div class="tile"><b>Not advice</b><span>Clear estimates, honest assumptions</span></div>
+  </div>
+</div></section>
+
+<div class="wrap">
+  <section class="gallery-sec">
+    <span class="kicker reveal">Crafted with care</span>
+    <h2 class="reveal">A closer look</h2>
+    <div class="gallery">
+      <figure>{device("finance-home","Home screen")}<figcaption>Everything in one place</figcaption></figure>
+      <figure>{device("finance-tax","Income tax")}<figcaption>New vs old regime</figcaption></figure>
+      <figure>{device("finance-compare","Compare offers")}<figcaption>Fees included, honestly</figcaption></figure>
+      <figure>{device("finance-goal","Goal planner")}<figcaption>Goals with inflation</figcaption></figure>
+      <figure>{device("finance-meaning","What it means")}<figcaption>Assumptions in plain words</figcaption></figure>
+    </div>
+  </section>
+</div>
+
+<section class="band final reveal"><div class="wrap">
+  <h2>Coming soon to Google Play</h2>
+  <p>Want early access or have a question? We'd love to hear from you.</p>
+  <div class="cta"><a class="btn btn-store" href="mailto:{EMAIL}?subject=Early%20access%20-%20Tattva%20Finance%20Calculator"><span><small>Get early access</small><b>Email us</b></span></a></div>
+</div></section>
+''' + FOOT
+
 def page(title, desc, current, kicker, h1, lede, body):
     return head(title, desc, current=current) + f'''
 <section class="band page-head"><div class="wrap">
@@ -304,14 +424,24 @@ ic_faq = [
  ("Is location removed from my photos?", "Yes, by default. You can choose to keep photo details (date, camera, location) in Settings."),
  ("Can I compress many photos at once?", "Yes, up to 50 at a time. Compression keeps running in the background with a progress notification, and you can cancel any time."),
 ]
+fc_faq = [
+ ("Are my numbers sent anywhere?", "No. The app has no internet permission, so your salary, loans and savings never leave your phone."),
+ ("Why is my bank's EMI slightly different?", "Banks may use daily interest, add broken-period interest to the first EMI, or include fees and insurance. Tap <strong>Understand this</strong> on any result: the Calculation Passport shows the method and lists why another figure may differ."),
+ ("Can I type amounts like 50L?", "Yes. Type 50L, 1.25 Cr or 45k, or tap ×Thousand / ×Lakh / ×Crore under the amount field. The app shows the full amount, like ₹50,00,000, before using it."),
+ ("Which tax rules does the income tax calculator use?", "FY 2026-27 (AY 2027-28) under the Income-tax Act, 2025, for resident individuals: new and old regime slabs, rebate, surcharge and cess. It's an estimate for understanding, not tax advice."),
+ ("Are PPF and Sukanya rates up to date?", "Defaults are the government rates for October–December 2026 (PPF 7.1%, SSY 8.2%). Rates change every quarter, so you can always edit them."),
+ ("Where are saved calculations kept?", "Only on your phone. Rename, duplicate, compare or delete them in the <strong>Saved</strong> tab; deleting has an undo."),
+]
 def faq_block(items): return '<div class="faq">' + ''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q, a in items) + '</div>'
 
 support_body = '<div class="prose" style="max-width:860px;margin:0 auto">' + \
  f'''<div class="chooser">
 <a href="#image-compressor"><img src="{APP_ICON}" alt="" width="44" height="44"><span>Tattva Image Compressor<small>Android</small></span></a>
+<a href="#finance-calculator"><img src="{FINANCE_ICON}" alt="" width="44" height="44"><span>Tattva Finance Calculator<small>Android</small></span></a>
 <a class="soon" aria-disabled="true"><span class="ph"></span><span>More apps<small>Coming soon</small></span></a>
 </div>''' + \
  product_head("image-compressor", "Tattva Image Compressor", "Tip: in the app, Settings → Contact support fills in your device details") + faq_block(ic_faq) + \
+ product_head("finance-calculator", "Tattva Finance Calculator", "Tip: found a number that looks wrong? Settings → Contact support, and include a screenshot", FINANCE_ICON) + faq_block(fc_faq) + \
  '<div class="product-head" id="general"><div><h2>General</h2><span>About Tattva Digital Labs</span></div></div>' + faq_block(general_faq) + \
  f'''<div class="contact"><div><h3>Still need help?</h3><p>Email us and tell us which app you're using, your phone model and Android version.</p></div>
 <a class="btn" href="mailto:{EMAIL}?subject=Support%20request">Email support</a></div></div>'''
@@ -319,6 +449,7 @@ support_body = '<div class="prose" style="max-width:860px;margin:0 auto">' + \
 files = {
  'index.html': home,
  'image-compressor/index.html': product,
+ 'finance-calculator/index.html': finance,
  'privacy/index.html': page("Privacy · Tattva Digital Labs", "How Tattva Digital Labs and its apps handle your information. No personal data collected.", "privacy",
                              "Privacy policy · Updated 27 November 2026", "Your data is yours. Full stop.",
                              "How Tattva Digital Labs and each of our apps handle your information, in plain language.", privacy_body),
