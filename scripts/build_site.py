@@ -4,6 +4,7 @@ EMAIL = 'support.tattvadigitallabs@gmail.com'
 MARK = '<img class="mark-img" src="/assets/brand/tattva-mark.svg" alt="" width="34" height="34">'
 APP_ICON = '/assets/brand/image-compressor-icon.svg'
 FINANCE_ICON = '/assets/brand/finance-calculator-icon.svg'
+PDF_ICON = '/assets/brand/pdf-tools-icon.svg'
 CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>'
 PLAY = '<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0f6e6a" d="M4.2 2.6c-.13.15-.2.37-.2.65v17.5c0 .28.07.5.2.65l.04.04L14 11.7v-.2L4.24 2.56z"/><path fill="#14b8a6" d="M17.3 15l-3.3-3.3v-.2l3.3-3.3.07.04 3.9 2.22c1.12.63 1.12 1.67 0 2.3l-3.9 2.22z"/><path fill="#0b5a57" d="M17.37 14.96L14 11.6 4.2 21.4c.36.38.96.43 1.64.04l11.53-6.48"/><path fill="#2dd4bf" d="M17.37 8.24L5.84 1.76C5.16 1.37 4.56 1.42 4.2 1.8L14 11.6z"/></svg>'
 ICONS = {
@@ -351,7 +352,7 @@ def product_head(anchor, name, sub, icon=APP_ICON):
 
 privacy_body = f'''<div class="grid">
 <aside class="toc"><b>On this page</b>
-<a href="#principles">Our principles</a><a href="#website">This website</a><a href="#image-compressor">Tattva Image Compressor</a><a href="#finance-calculator">Tattva Finance Calculator</a><a href="#children">Children</a><a href="#changes">Changes</a><a href="#contact">Contact</a></aside>
+<a href="#principles">Our principles</a><a href="#website">This website</a><a href="#image-compressor">Tattva Image Compressor</a><a href="#finance-calculator">Tattva Finance Calculator</a><a href="#pdf-tools">Tattva PDF Tools</a><a href="#children">Children</a><a href="#changes">Changes</a><a href="#contact">Contact</a></aside>
 <article class="prose">
 <div class="summary"><h2>The short version</h2>
 <p>Tattva Digital Labs builds apps that work without collecting your personal data. Each app below explains exactly what it accesses and what stays on your device.</p>
@@ -401,6 +402,27 @@ privacy_body = f'''<div class="grid">
 <p>Results are estimates for understanding only and are not financial or tax advice. Each result's Calculation Passport explains the method and assumptions used.</p>
 <h3>If this changes</h3>
 <p>If we ever add anonymous usage statistics, we will update this section and the app's Google Play data safety information before that version is released. The numbers you enter would never be included.</p>
+
+{product_head("pdf-tools", "Tattva PDF Tools", "Android app · Updated 28 November 2026", PDF_ICON)}
+<p><strong>Summary:</strong> your files never leave your phone. The app makes, merges, splits, unlocks and compresses PDFs entirely on your device. It does not collect, store, send or share any personal data, and it has no internet permission.</p>
+<h3>What the app accesses</h3>
+<p>Only the PDFs, photos and scans you choose, through Android's file and photo pickers or when you share a file to the app. While you work on a file, the app keeps a private working copy, which is deleted when you finish or the app restarts. Your original files are never changed.</p>
+<h3>Passwords</h3>
+<p>A password you type to unlock a PDF is kept in memory only for that task. It is never saved, logged or sent anywhere. The app removes passwords you already know; it never guesses or cracks them.</p>
+<h3>What stays on your device</h3>
+<ul><li><strong>Settings</strong> such as theme, default page size and default compress size.</li>
+<li><strong>History</strong>: the name, size, date and saved location of files you saved. Clear it any time in Settings → Clear history. The files themselves are not affected.</li></ul>
+<p>None of this leaves your device. App data is excluded from cloud backup and device-to-device transfer.</p>
+<h3>Scanning</h3>
+<p>The document scanner is Google's on-device scanner, provided by Google Play services. Its screens run inside Google Play services; the scanned pages are returned to the app and processed on your phone. Google's handling of that component is covered by Google's privacy policy.</p>
+<h3>Saving and sharing</h3>
+<p>Files you save go to Download/Tattva PDF or Pictures/Tattva PDF, or a place you choose. When you tap Share, the file is handed only to the app you pick. What happens after that is governed by that app.</p>
+<h3>Network access</h3>
+<p>The app does not request internet permission, so it cannot send data anywhere. This is checked automatically every time the app is built. It contains no ads or analytics.</p>
+<h3>Permissions</h3>
+<ul><li><strong>Notifications</strong> (Android 13+, optional): show progress while a large file is processed.</li>
+<li><strong>Storage</strong> (Android 8–9 only): save files to Download and Pictures. Newer Android versions don't need it.</li></ul>
+<p>Tattva PDF Tools is not affiliated with UIDAI or any government body.</p>
 
 <h2 id="children">Children</h2>
 <p>Our apps do not knowingly collect personal data from anyone, including children.</p>
