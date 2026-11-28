@@ -141,3 +141,7 @@ p{margin:0}
 .chooser .soon{opacity:.6;border-style:dashed;box-shadow:none}
 .chooser .soon span.ph{width:44px;height:44px;border-radius:11px;border:2px dashed var(--line-strong);display:block}
 .prose h3{font-size:18px;margin:26px 0 8px;letter-spacing:-.01em}
+
+/* Small phones: the mark alone keeps the header on one line next to Apps · Privacy · Support. */
+.nav .brand .name{white-space:nowrap}
+@media (max-width:440px){.nav .brand .name{display:none}.nav nav a{padding:8px 10px}}
